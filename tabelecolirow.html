@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabele: Row i Col</title>
+    <style>
+        body {
+            background-color: rgb(190, 186, 194);
+            font-family: Arial, sans-serif;
+        }
+        table {
+            width: 50%;
+            border-collapse: collapse;
+            margin: 18px auto;
+        }
+        th, td {
+            border: 2px solid rgb(0, 0, 0);
+            padding: 10px;
+            text-align: left;
+            transition: background-color 0.3s ease;
+        }
+        th {
+            background-color: #00ffb3;
+            color: rgb(0, 0, 0);
+        }
+        td {
+            background-color: #ffffff;
+        }
+        tr:hover td {
+            background-color: #01c4ff;
+        }
+        caption {
+            font-weight: bold;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Dane Ucznia</caption>
+        <tr>
+            <th colspan="2">Dane Ucznia</th>
+        </tr>
+        <tr>
+            <th>Imię:</th>
+            <td><input type="text" value="Michał"></td>
+        </tr>
+        <tr>
+            <th>Nazwisko:</th>
+            <td><input type="text" value="Lalik"></td>
+        </tr>
+        <tr>
+            <th>Klasa:</th>
+            <td><input type="text" value="2Toś"></td>
+        </tr>
+        <tr>
+            <th>Ulubiony Przedmiot:</th>
+            <td><input type="text" value="WF"></td>
+        </tr>
+    </table>
+    <table>
+        <caption>Plan Lekcji</caption>
+        <tr>
+            <th rowspan="2">Dzień</th>
+            <th colspan="4">Godziny</th>
+        </tr>
+        <tr>
+            <th>1. Godzina</th>
+            <th>2. Godzina</th>
+            <th>3. Godzina</th>
+            <th>4. Godzina</th>
+        </tr>
+        <tr>
+            <td>Środa</td>
+            <td colspan="2">PracPOI</td>
+            <td>Historia</td>
+            <td>Religia</td>
+        </tr>
+        <tr>
+            <td>Czwartek</td>
+            <td>WI</td>
+            <td>WI</td>
+            <td>J.Polski</td>
+            <td>WF</td>
+        </tr>
+        <tr>
+            <td>Piątek</td>
+            <td colspan="2">WF</td>
+            <td>Geografia</td>
+            <td>Matematyka</td>
+        </tr>
+    </table>
+    <table>
+        <caption>Ankieta Szkolna</caption>
+        <tr>
+            <th colspan="2">Ankieta Szkolna</th>
+        </tr>
+        <tr>
+            <td>Który przedmiot lubisz najbardziej?</td>
+            <td><input type="text" style="width: 100%;" value="WF"></td>
+        </tr>
+        <tr>
+            <td>Który przedmiot jest najtrudniejszy?</td>
+            <td><input type="text" style="width: 100%;" value="Matematyka"></td>
+        </tr>
+    </table>
+    <table>
+        <caption>Wyniki Sportowe</caption>
+        <tr>
+            <th colspan="4">Wyniki Sportowe</th>
+        </tr>
+        <tr>
+            <th>Imię</th>
+            <th>Nazwisko</th>
+            <th>Dyscyplina</th>
+            <th>Wynik</th>
+        </tr>
+        <tr>
+            <td>Monika</td>
+            <td>Gmyz</td>
+            <td>100m</td>
+            <td>10.23s</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Zespół A</td>
+            <td>Kowalski</td>
+            <td rowspan="2">Piłka nożna</td>
+            <td rowspan="2">1. Miejsce</td>
+        </tr>
+        <tr>
+            <td>Lipiński</td>
+        </tr>
+        <tr>
+            <td>CoCo Jambo</td>
+            <td>Michalski</td>
+            <td>400m</td>
+            <td>59.67s</td>
+        </tr>
+    </table>
+    <table>
+        <caption>Harmonogram Wydarzeń</caption>
+        <tr>
+            <th colspan="3">Harmonogram Wydarzeń</th>
+        </tr>
+        <tr>
+            <th>Data</th>
+            <th>Wydarzenie</th>
+            <th>Miejsce</th>
+        </tr>
+        <tr>
+            <td rowspan="2">15-16 października</td>
+            <td>Wycieczka szkolna</td>
+            <td><a href="https://energylandia.pl/">EnergyLandia</a></td>
+        </tr>
+        <tr>
+            <td>Spotkanie z Policjantem</td>
+            <td>Hala sportowa</td>
+        </tr>
+        <tr>
+            <td>25 października</td>
+            <td>Warsztaty artystyczne</td>
+            <td>Klasa Numer: 5</td>
+        </tr>
+    </table>
+</body>
+</html>
